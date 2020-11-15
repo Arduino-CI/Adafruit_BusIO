@@ -3,7 +3,7 @@
 
 // remove after https://github.com/Arduino-CI/arduino_ci/pull/211 is merged
 #if !defined(portInputRegister)
-  #define portInputRegister(port)  (GODMODE()->pMmapPort(port))
+#define portInputRegister(port) (GODMODE()->pMmapPort(port))
 #endif
 
 //#define DEBUG_SERIAL Serial
