@@ -75,14 +75,6 @@ Adafruit_SPIDevice::Adafruit_SPIDevice(int8_t cspin, int8_t sckpin,
   _spi = NULL;
 }
 
-// Release memory allocated in constructors
-Adafruit_SPIDevice::~Adafruit_SPIDevice() {
-  if (_spiSetting) {
-    delete _spiSetting;
-    _spiSetting = nullptr;
-  }
-}
-
 /*!
  *    @brief  Release memory allocated in constructors
  */
